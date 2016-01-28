@@ -19,7 +19,6 @@ public class ConnectingTowns {
             System.out.println(routes);
         }        
         scan.close();
-
 	}
 
 }
