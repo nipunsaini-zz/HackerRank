@@ -20,7 +20,7 @@ public class ReverseGame {
         	int right = n-1;
         	int left = 0;
         	boolean r = true;
-        	boolean l = false;
+        	//boolean l = false;
         	int index = -1;
         	for(int x = 0; x <= n-1; x++){
         		if(r){
@@ -33,11 +33,11 @@ public class ReverseGame {
         		}
         		if(r){
         			r = false;
-        			l = true;
+        			//l = true;
         		}
         		else{
         			r = true;
-        			l = false;
+        			//l = false;
         		}
         		if(k == arr[index]){
         			System.out.println(x);

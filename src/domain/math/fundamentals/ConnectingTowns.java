@@ -9,7 +9,7 @@ public class ConnectingTowns {
 		Scanner scan = new Scanner(System.in);
         int t = Integer.parseInt(scan.nextLine());
         for(int i = 0; i < t; i++){
-            int towns = Integer.parseInt(scan.nextLine());
+        	scan.nextLine();
             String str[] = scan.nextLine().split(" ");
             long routes = 1;
             for(String s : str){

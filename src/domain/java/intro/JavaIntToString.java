@@ -13,11 +13,11 @@ import java.util.Scanner;
 
 public class JavaIntToString {
 public static void main(String[] args) {
-		
+		Scanner in = null;
 		Do_Not_Terminate.forbidExit();
 
 		try{
-			Scanner in = new Scanner(System.in);
+			in = new Scanner(System.in);
 			int n=in.nextInt();
 			//String s=???; Complete this line below
 			String s = String.valueOf(n);
