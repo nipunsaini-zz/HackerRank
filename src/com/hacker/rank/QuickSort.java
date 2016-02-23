@@ -1,4 +1,4 @@
-package src.com.hacker.rank;
+package com.hacker.rank;
 
 public class QuickSort {
 

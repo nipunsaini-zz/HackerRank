@@ -1,4 +1,4 @@
-package src.com.hacker.rank;
+package com.hacker.rank;
 
 import java.io.IOException;
 import java.text.DecimalFormat;
