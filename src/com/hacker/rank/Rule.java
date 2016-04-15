@@ -2,6 +2,7 @@ package com.hacker.rank;
 
 import java.util.Comparator;
 
+
 class Student{
 	   private int id;
 	   private String fname;
@@ -28,7 +29,6 @@ public class Rule {
 	public static Comparator<Student> desc= new Comparator<Student>(){
 
 		public int compare(Student o1, Student o2) {
-			// TODO Auto-generated method stub
 			int cmp = ((Double)o2.getCgpa()).compareTo((Double)o1.getCgpa());
 			
 			if(cmp == 0){
