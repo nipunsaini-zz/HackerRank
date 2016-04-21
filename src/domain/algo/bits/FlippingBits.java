@@ -9,8 +9,8 @@ public class FlippingBits {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		int T = Integer.parseInt(br.readLine().trim());
 		for(int i = 0; i < T; i++){
-			int res = ~ Integer.parseInt(br.readLine());
-			System.out.println(Long.toString(res & 0xFFFFFFFFL));
+			long res = ~ Long.parseLong(br.readLine());
+			System.out.println(res & 0xFFFFFFFFL);
 		}
 
 	}
