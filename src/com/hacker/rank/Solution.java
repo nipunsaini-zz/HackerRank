@@ -6,27 +6,42 @@ import java.util.Comparator;
 import java.util.Scanner;
 
 public class Solution {
-	
-	static void swap_array(int[] a) {
-		
 
+    public static void solve(int n) {
+        int d = n/1000;
 
+        while(d > 99) {
+            String s = String.valueOf(d);
+            int res = Integer.parseInt(s + new StringBuilder(s).reverse().toString());
+            if (res > n) {
+                d--;
+                continue;
+            }
+            for(int i = 101; i < 1000; i++) {
+                int a = res/i;
+                if(a*i == res && a>99 && a<1000) {
+                    System.out.println(res);
+                    d=99;
+                    break;
+                }
+            }
+            d--;
+        }
+    }
+
+    public static boolean isPrime(int n) {
+        if(n < 2) return false;
+        if(n==2) return true;
+        if(n%2 == 0) return false;
+        for(int i = 3; i <= Math.sqrt(n); i += 2) {
+            if (n%i == 0) return false;
+        }
+        return true;
     }
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		Scanner in = new Scanner(System.in);        
-        int _a_size = 0;
-        _a_size = Integer.parseInt(in.nextLine());
-        int[] _a = new int[_a_size];
-        int _a_item;
-        for(int _a_i = 0; _a_i < _a_size; _a_i++) {
-            _a_item = Integer.parseInt(in.nextLine());
-            _a[_a_i] = _a_item;
-        }
-        
-        swap_array(_a);
-
+		solve(800000);
 	}
 
 }
